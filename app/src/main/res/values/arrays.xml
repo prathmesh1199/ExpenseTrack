@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AndhraPradesh">
+        <item>Vishakapatnam</item>
+        <item>Tirupati</item>
+        <item>Vijaywada</item>
+        <item>Guntur</item>
+
+    </string-array>
+    
+    <string-array name="Karnataka">
+
+        <item>Banglore</item>
+        <item>Manglore</item>
+        <item>Hubli</item>
+        <item>Belgaum</item>
+    </string-array>
+
+    <string-array name="Kerela">
+
+
+
+        <item>Thirivanantpuram</item>
+        <item>Kochi</item>
+        <item>Kollam</item>
+        <item>Kozhikode</item>
+
+    </string-array>
+
+    <string-array name="Maharashtra">
+
+        <item>Maharashtra</item>
+        <item>Mumbai</item>
+        <item>Nagpur</item>
+        <item>Nashik</item>
+
+    </string-array>
+
+</resources>

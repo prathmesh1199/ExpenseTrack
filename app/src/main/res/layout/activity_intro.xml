@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/transcard"
+                app:cardCornerRadius="30dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/cyan"
+                        android:text="Transactions"
+                        android:textSize="30sp">
+                    </TextView>
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:layout_margin="5dp"
+                        android:padding="3dp"
+                        android:id="@+id/pieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/approv"
+                        android:text="Approved"
+                        android:onClick="on_approved_click"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reject"
+                        android:text="Rejected"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        ></TextView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/re_submit"
+                        android:text="Re-Submitted"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reopen"
+                        android:text="Re-Open"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        ></TextView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_fab"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
